@@ -23,7 +23,8 @@ def process_and_store_data_in_sql(json_data, server, database, username, passwor
     try:
         conn = pyodbc.connect(
             f"DRIVER={{ODBC Driver 17 for SQL Server}};"
-            f"SERVER={server};DATABASE={database};UID={username};PWD={password}"
+            f"SERVER={server};DATABASE={database};UID={username};PWD={password};"
+            "Timeout=60;" 
         )
         cursor = conn.cursor()
 
