@@ -1,2 +1,5 @@
 datetime
 pyodbc
+pandas
+numpy
+requests
