@@ -83,7 +83,7 @@ try:
             sql_user = "sa"
             sql_pass = "sq"
 
-            process_and_store_data_in_sql(data_as_variable,ODBC Driver 17 for SQL Server, sql_db, sql_user, sql_pass)
+            process_and_store_data_in_sql(data_as_variable,sql_server, sql_db, sql_user, sql_pass)
 
         except json.JSONDecodeError:
             print("Failed to decode JSON.")
